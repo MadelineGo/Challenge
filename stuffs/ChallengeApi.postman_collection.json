@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "147807e4-21eb-4155-8b79-a55c846ba3ed",
+		"name": "ChallengeApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5024286"
+	},
+	"item": [
+		{
+			"name": "getElasticPermissions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "ChallengeN5123",
+						"username": "elastic"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9200/elasticpermissiondto/_search?pretty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"elasticpermissiondto",
+						"_search"
+					],
+					"query": [
+						{
+							"key": "pretty",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPermissions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5166/api/Permissions?PageNumber=1&PageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5166",
+					"path": [
+						"api",
+						"Permissions"
+					],
+					"query": [
+						{
+							"key": "PageNumber",
+							"value": "1"
+						},
+						{
+							"key": "PageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPermission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Roxana\",\n    \"employeeSurname\": \"Gómez\",\n    \"permissionTypeId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5166/api/Permissions"
+			},
+			"response": []
+		},
+		{
+			"name": "getPermissionById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5166/api/Permissions/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5166",
+					"path": [
+						"api",
+						"Permissions",
+						"3"
+					],
+					"query": [
+						{
+							"key": "permissionId",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyPermission",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"employeeName\": \"Madeline\",\n    \"employeeSurname\": \"Gómez\",\n    \"permissionTypeId\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5166/api/Permissions/3"
+			},
+			"response": []
+		},
+		{
+			"name": "getPermissionsType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5166/api/PermissionsType"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,57 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio / VS Code settings
+.vs/
+.vscode/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.csproj.user
+*.vcxproj.user
+*.psess
+*.vsp
+*.vspx
+
+# Rider settings
+.idea/
+*.sln.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Build artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Dotnet Tools
+.store/
+.tools/
+.dotnet/
+
+# Azure build output
+*.azurePubxml
+*.publishproj
+
+# Publish output
+[Pp]ublish/
+[Oo]ut/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+

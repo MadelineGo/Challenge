@@ -1,0 +1,23 @@
+# Node/Vite build artifacts
+dist
+node_modules
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & config
+.env
+.env.*
+
+# OS / tooling
+.DS_Store
+*.swp
+*.swo
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
