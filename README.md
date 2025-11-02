@@ -1,7 +1,7 @@
 # Challenge-N5
 
 Repositorio con dos aplicaciones ChallengeApp y challenge-web que se integran para realizar gestiones de permisos de empleados.
-- `ChallengeApp`: API .NET 8 con capas de dominio, aplicacion e infraestructura, respaldada por SQL Server, Kafka y Elasticsearch.
+- `ChallengeApp`: API .NET 8 con capas de dominio, aplicación e infraestructura, respaldada por SQL Server, Kafka y Elasticsearch.
 - `challenge-web`: SPA en React/Vite con Material UI que consume la API para operar sobre permisos.
 
 ## Contenido
@@ -37,7 +37,7 @@ Repositorio con dos aplicaciones ChallengeApp y challenge-web que se integran pa
 **challenge-web**
 - Página principal que lista los permisos 
 - Página para solicitar un permiso
-- PaPágina para modificar un permiso
+- Página para modificar un permiso
 
 ## Diagramas Mermaid
 
